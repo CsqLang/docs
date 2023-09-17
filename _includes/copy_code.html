@@ -1,0 +1,44 @@
+<style>
+  .copy-button {
+  	background-color: #464646;
+  	color: #fff;
+  	border: none;
+  	border-radius: 4px;
+  	padding: 5px 10px;
+  	cursor: pointer;
+  	margin: 5px 0;
+	display: block;
+}
+</style>
+<script>
+  document.addEventListener("DOMContentLoaded", (event) => {
+	document.querySelectorAll("pre code").forEach((block) => {
+		const parent = block.parentNode;
+		const copyButton = document.createElement("button");
+		copyButton.innerText = "Copy";
+		copyButton.className = "copy-button";
+		copyButton.addEventListener("click", () => {
+			const textArea = document.createElement("textarea");
+			textArea.value = block.innerText;
+			document.body.appendChild(textArea);
+			textArea.select();
+			document.execCommand("copy");
+			document.body.removeChild(textArea);
+
+			copyButton.innerText = "Copied to clipboard!";
+
+			setTimeout(() => {
+                copyButton.innerText = "Copy";
+            }, 2000);
+		});
+		parent.insertBefore(copyButton, block);
+	});
+});
+
+function reset_copy() {
+	// function that rest previous clipboard copy button inner text
+	document.querySelectorAll(".copy-button").forEach((blck) => {
+		blck.innerText = "Copy";
+	});
+}
+</script>
