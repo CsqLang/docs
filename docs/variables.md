@@ -26,3 +26,17 @@ The output of the program will be:
 ```bash
 20
 ```
+
+CSQ supports list (contiguous memory allocation)
+As CSQ is dynamically typed so the elements can be of any type.
+```csq
+a := {1,'Hi'}
+print a[0]
+print '\n'
+print a[1]
+```
+Output
+```
+1.000000
+Hi
+```
