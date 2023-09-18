@@ -20,7 +20,7 @@ To use it you can either use existing functions like range or create a list to t
 
 Using range function
 
-```
+```csq
 for i in range(10):
  print i 
  print '\n'
