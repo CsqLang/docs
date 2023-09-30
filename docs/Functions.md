@@ -20,5 +20,5 @@ print sum(5,100)
 Output:
 ```
 Hello
-105.0000
+105
 ```
