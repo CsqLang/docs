@@ -10,13 +10,13 @@ All the C/C++ code is still available.
 
 ## Progress
 
--   [x] Grammar
--   [x] Parser
--   [x] Tokenizer
--   [ ] Compiler
--   [ ] AST
--   [ ] Interpreter
--   [x] Builtins
+- [x] Grammar
+- [x] Parser
+- [x] Tokenizer
+- [x] Compiler
+- [x] AST
+- [x] Interpreter
+- [x] Builtins
 
 ## Contributing
 
