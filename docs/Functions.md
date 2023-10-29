@@ -9,7 +9,7 @@ Csq supports functions, they can be called and used without the need to rewrite 
 ### Usage
 ```
 def hello():
- print 'Hello\n'
+ print 'Hello'
 
 def sum(a,b):
  return a + b 
