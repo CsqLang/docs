@@ -9,8 +9,8 @@ The while loop will execute a block of statements until the condition is true.
 ```csq
 i := 0
 while i < 5:
-    print i
-    i = i + 1
+ print i
+ i = i + 1
 ```
 
 ## For Loop
@@ -23,7 +23,6 @@ Using range function
 ```csq
 for i in 1->10:
  print i 
- print '\n'
 ```
 Output:
 ```
